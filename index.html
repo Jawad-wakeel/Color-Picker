@@ -1,0 +1,2290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+
+    <style>
+     
+     
+        .Preci-btn{
+            width: 130px;
+            height: 30px;
+            outline: none;
+            border: 1px solid #ffc500;
+            border-radius: 25px;
+            background-color: #FFFFFF;
+            margin-left: 20px;
+            margin-bottom: 40px;
+        }
+        .lastone-btn{
+            width: 130px;
+            height: 30px;
+            outline: none;
+            border-radius: 25px;
+            background-color: #ffc500;
+            margin-left: 20px;
+            margin-bottom: 40px;
+            border: none;
+
+        }
+        .below-btns{
+            display: flex;
+            width: 62%;
+            justify-content: space-between;
+
+        }
+        
+        #mylitre-plan .rightMultiColor {
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        #mylogo-plan {
+            display: none;
+        }
+
+        #mylitre-plan {
+            display: none;
+        }
+
+        .blankboxlitre {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        .blankBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+
+        }
+
+        .square-checked {
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            background-color: gray;
+            border-radius: 3px;
+        }
+
+        .forOpacity {
+            pointer-events: auto !important;
+            opacity: 1 !important;
+        }
+
+        #mylitre-plan-mbl {
+            display: none;
+
+        }
+
+        #mylogo-plan-mbl {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section id="desktop-version">
+        <!-- Desktop Header -->
+        <div class="desktop-header">
+            <div class="icon-box mb-4"><img src="images/texte_logo.png" alt=""></div>
+            <div class="icon-box mt-4 mb-4"><img src="images/search-i.png" alt="" width="55px"></div>
+            <div class="icon-box"><img src="images/market.png" alt="">
+                <p class="mt-1">market</p>
+
+            </div>
+            <div class="icon-box mb-2"><img src="images/cash.png" alt="">
+                <p class="mt-1">Location</p>
+            </div>
+            <div class="icon-box mb-2"><img src="images/485.png" alt="">
+                <p class="mt-1">Immatriculation</p>
+            </div>
+            <div class="icon-box mb-2"><img src="images/fix.png" alt="">
+                <p class="mt-1">Entretien</p>
+            </div>
+            <div class="icon-box mb-2"><img src="images/car_wash.png" alt="">
+                <p class="mt-1">Car wash</p>
+            </div>
+            <div class="icon-box mb-2"><img src="images/line.png" alt=""></div>
+            <div class="icon-box mt-3"><img src="images/shop.png" alt=""></div>
+            <div class="icon-box mt-5  mb-4"><img src="images/login.png" alt=""></div>
+
+
+        </div>
+
+        <!-- Top Heading Text -->
+        <div class="full-container">
+            <div class="landing-heading">
+                <p>Créer votre plaque d'immatriculation<br>
+                    et exploiter votre créativité</p>
+
+            </div>
+        </div>
+        <!-- Main content Starts Here -->
+        <div class="main-content">
+
+            <!-- Upper section -->
+            <div class="upper-box">
+                <div class="types-vehicle">
+                    <div class="text-vehicle">
+                        Type de véhicule
+
+                    </div>
+                    <div class="vehicle-btns">
+                        <div class="btn-boxs">
+                            <span class="selected">Auto</span>
+                            <span>Moto</span>
+                            <span>4x4</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="main-textbox">
+                    <div class="inner-area-textbox">
+                        <div class="left-area-textbox">
+                            <span class="star-box">
+                                <i class="fa-solid fa-star s1"></i>
+                                <i class="fa-solid fa-star s2"></i>
+                                <i class="fa-solid fa-star s3"></i>
+                                <i class="fa-solid fa-star s4"></i>
+                                <i class="fa-solid fa-star s5"></i>
+                                <i class="fa-solid fa-star s6"></i>
+                                <i class="fa-solid fa-star s7"></i>
+                                <i class="fa-solid fa-star s8"></i>
+                                <i class="fa-solid fa-star s9"></i>
+                                <i class="fa-solid fa-star s10"></i>
+                                <i class="fa-solid fa-star s11"></i>
+                                <i class="fa-solid fa-star s12"></i>
+                            </span>
+                            <div class="logo-F">
+                                F
+                            </div>
+
+                        </div>
+                        <div class="mid-area-textbox">
+                            <input type="text" maxlength="3">
+                            <div class="dashed-box">
+                                <span></span>
+                            </div>
+                            <input type="number"
+                                onKeyDown="if(this.value.length==3 && event.keyCode!=8) return false;" />
+                            <div class="dashed-box">
+                                <span></span>
+                            </div>
+                            <input type="text" maxlength="3">
+
+                        </div>
+                        <div class="right-area-textbox"><img src="images/right.png" alt="" height="160px"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Lower section -->
+            <div class="lower-box">
+                <div class="color-content">
+                    <section>
+                        <div class="main">
+                            <!---header-->
+                            <div class="header-blue">
+                                <!---header options-->
+                                <div class="header-options">
+
+                                    <div class="option1 opt">
+                                        <div class="optImage"><img src="images/icon1.png"></div>
+                                        <p>Numero</p>
+                                    </div>
+                                    <div class="option2 opt" style="background: #FFC500;">
+                                        <div class="optImage"><img src="images/icon2.png"></div>
+                                        <p style="color: white;">Euro bande</p>
+                                    </div>
+                                    <div class="option3 opt">
+                                        <div class="optImage"><img src="images/icon3.png"></div>
+                                        <p>Departement</p>
+                                    </div>
+                                    <div class="option4 opt">
+                                        <div class="optImage"><img src="images/icon4.png"></div>
+                                        <p>Fond</p>
+                                    </div>
+                                    <div class="option5 opt">
+                                        <div class="optImage"><img src="images/icon5.png"></div>
+                                        <p>Petit texte</p>
+                                    </div>
+                                    <div class="option6 opt">
+                                        <div class="optImage"><img src="images/icon6.png"></div>
+                                        <p>Contour</p>
+                                    </div>
+                                </div>
+                                <!---header menu heading-->
+
+                            </div>
+
+
+                            <!---sub main for below colors and other--->
+                            <div class="sub-main">
+                                <!---for colors-->
+                                <div class="left-colors">
+                                    <!--sub-options-->
+                                    <div class="sub-options">
+                                        <div class="ss1 sub-opt">
+                                            <p>Arriere plan</p>
+                                        </div>
+                                        <div class="ss2 sub-opt">
+                                            <p>Logo</p>
+                                        </div>
+                                        <div class="ss3 sub-opt">
+                                            <p>Lettre</p>
+                                        </div>
+                                    </div>
+                                    <!---colors block-->
+
+                                    <section class="" id="my-arrierplan">
+                                        <div class="colors">
+                                            <div class="left-side">
+                                                <div class="display">
+                                                    <!---selected color-->
+                                                    <div class="selected-box">
+                                                        <div class="selected-color"></div>
+                                                        <div class="color-name">
+                                                            <label>Fond : </label>
+                                                            <span id="nameOfColor">&nbsp; Blue</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pen"><img src="images/selectColor.png"></div>
+                                                </div>
+                                                <!--Multiple colors--->
+                                                <div class="multipleColors">
+                                                    <!----Left color started <div class="colorName colorNames">-->
+                                                    <div class="colorName colorNames" color-name="Cod gray"
+                                                        style="background: #0A090A"></div>
+                                                    <div class="colorName colorNames" color-name="Maroon"
+                                                        style="background: #800000"></div>
+                                                    <div class="colorName colorNames" color-name="Guardsman Red"
+                                                        style="background: #C00203"></div>
+                                                    <div class="colorName colorNames" color-name="Crusoe"
+                                                        style="background: #FD1A19"></div>
+                                                    <div class="colorName colorNames" color-name="Cinnamon"
+                                                        style="background: #034502"></div>
+                                                    <div class="colorName colorNames" color-name="Indochine"
+                                                        style="background: #805C02"></div>
+                                                    <div class="colorName colorNames" color-name="Blaze orange"
+                                                        style="background: #BF6601"></div>
+                                                    <div class="colorName colorNames" color-name="Olive"
+                                                        style="background: #FF7202"></div>
+                                                    <div class="colorName colorNames" color-name="Buddha Gold"
+                                                        style="background: #036602"></div>
+                                                    <div class="colorName colorNames" color-name="Turbo"
+                                                        style="background: #828A03"></div>
+                                                    <div class="colorName colorNames" color-name="Venetian"
+                                                        style="background: #C39D0B"></div>
+                                                    <div class="colorName colorNames" color-name="Limeade"
+                                                        style="background: #FFE501"></div>
+                                                    <div class="colorName colorNames" color-name="Rio Grande"
+                                                        style="background: #038803"></div>
+                                                    <div class="colorName colorNames" color-name="Turbo"
+                                                        style="background: #81B603"></div>
+                                                    <div class="colorName colorNames" color-name="Stratos"
+                                                        style="background: #C2CE03"></div>
+                                                    <div class="colorName colorNames" color-name="Siren"
+                                                        style="background: #FFE501"></div>
+                                                    <div class="colorName colorNames" color-name="Monza"
+                                                        style="background: #000032"></div>
+                                                    <div class="colorName colorNames" color-name="Torch Red"
+                                                        style="background: #800033"></div>
+                                                    <div class="colorName colorNames" color-name="Teal Blue"
+                                                        style="background: #C00138"></div>
+                                                    <div class="colorName colorNames" color-name="Russett"
+                                                        style="background: #FE0532"></div>
+                                                    <div class="colorName colorNames" color-name="Contessa"
+                                                        style="background: #024958"></div>
+                                                    <div class="colorName colorNames" color-name="Bitter sweet"
+                                                        style="background: #816059"></div>
+                                                    <div class="colorName colorNames" color-name="Copper Red"
+                                                        style="background: #C06D5B"></div>
+                                                    <div class="colorName colorNames" color-name="Battleship Gray"
+                                                        style="background: #FF7859"></div>
+                                                    <div class="colorName colorNames" color-name="Twine"
+                                                        style="background: #026B6B"></div>
+                                                    <div class="colorName colorNames" color-name="Macaroni & cheese"
+                                                        style="background: #80916D"></div>
+                                                    <div class="colorName colorNames" color-name="Camel"
+                                                        style="background: #C0A36C"></div>
+                                                    <div class="colorName colorNames" color-name="De York"
+                                                        style="background: #FEB56D"></div>
+                                                    <div class="colorName colorNames" color-name="Yellow Green"
+                                                        style="background: #026B6B"></div>
+                                                    <div class="colorName colorNames" color-name="Dolly"
+                                                        style="background: #81C080"></div>
+                                                    <div class="colorName colorNames" color-name="Stratos"
+                                                        style="background: #C1D97F"></div>
+                                                    <div class="colorName colorNames" color-name="Cardinal Pink"
+                                                        style="background: #FFF282"></div>
+                                                    <div class="colorName colorNames" color-name="Shiraz"
+                                                        style="background: #03024C"></div>
+                                                    <div class="colorName colorNames" color-name="Torch Red"
+                                                        style="background: #81044B"></div>
+                                                    <div class="colorName colorNames" color-name="Congress Blue"
+                                                        style="background: #C00248"></div>
+                                                    <div class="colorName colorNames" color-name="Rum"
+                                                        style="background: #FE0248"></div>
+                                                    <div class="colorName colorNames" color-name="Old Rose"
+                                                        style="background: #024986"></div>
+                                                    <div class="colorName colorNames" color-name="Geraldine"
+                                                        style="background: #816388"></div>
+                                                    <div class="colorName colorNames" color-name="Charm"
+                                                        style="background: #C37088"></div>
+                                                    <div class="colorName colorNames" color-name="Regen Gray"
+                                                        style="background: #FF7F87"></div>
+                                                    <div class="colorName colorNames" color-name="Malta"
+                                                        style="background: #046DA5"></div>
+                                                    <div class="colorName colorNames" color-name="Wax Flower"
+                                                        style="background: #8197A3"></div>
+                                                    <div class="colorName colorNames" color-name="Pacific Blue"
+                                                        style="background: #C1ABA3"></div>
+                                                    <div class="colorName colorNames" color-name="Half Baked"
+                                                        style="background: #FEBAA4"></div>
+                                                    <div class="colorName colorNames" color-name="Pixie Green"
+                                                        style="background: #0494C0"></div>
+                                                    <div class="colorName colorNames" color-name="Lemon Chiffon"
+                                                        style="background: #82C6BF"></div>
+                                                    <div class="colorName colorNames" color-name="Lucky Point"
+                                                        style="background: #C1E0C0"></div>
+                                                    <div class="colorName colorNames" color-name="Cardinal Pink"
+                                                        style="background: #FFF9CD"></div>
+                                                    <div class="colorName colorNames" color-name="Medium Red violet"
+                                                        style="background: #1C1A73"></div>
+                                                    <div class="colorName colorNames" color-name="Rose"
+                                                        style="background: #820265"></div>
+                                                    <div class="colorName colorNames" color-name="Cobalt"
+                                                        style="background: #CC3A7F"></div>
+                                                    <div class="colorName colorNames" color-name="Deluge"
+                                                        style="background: #FE115F"></div>
+                                                    <div class="colorName colorNames" color-name="Viola"
+                                                        style="background: #034BB2"></div>
+                                                    <div class="colorName colorNames" color-name="Tickle me Pink"
+                                                        style="background: #8066B2"></div>
+                                                    <div class="colorName colorNames" color-name="Science Blue"
+                                                        style="background: #C374B3"></div>
+                                                    <div class="colorName colorNames" color-name="Chetwode Blue"
+                                                        style="background: #FF82B2"></div>
+                                                    <div class="colorName colorNames" color-name="Logan"
+                                                        style="background: #0471D9"></div>
+                                                    <div class="colorName colorNames" color-name="Vista Blue"
+                                                        style="background: #7C92D1"></div>
+                                                    <div class="colorName colorNames" color-name="Azure Radiance"
+                                                        style="background: #B19FC8"></div>
+                                                    <div class="colorName colorNames" color-name="Cotton candy"
+                                                        style="background: #FFBDD7"></div>
+                                                    <div class="colorName colorNames" color-name="Azure"
+                                                        style="background: #0297FE"></div>
+                                                    <div class="colorName colorNames" color-name="Fresh Air"
+                                                        style="background: #ADDDFD"></div>
+                                                    <div class="colorName colorNames" color-name="Water"
+                                                        style="background: #CBE9FD"></div>
+                                                    <div class="colorName colorNames" color-name="White"
+                                                        style="background: #FFFFFF"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section id="mylogo-plan">
+                                        <!--colors left side-->
+                                        <div class="colors">
+                                            <div class="left-side">
+                                                <div class="display">
+                                                    <!---selected color-->
+                                                    <div class="selected-box">
+                                                        <div class="selected-color"></div>
+                                                        <div class="color-name">
+                                                            <label>Fond : </label>
+                                                            <span id="nameOfColor">&nbsp;Blue</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pen"><img src="images/selectColor.png"></div>
+                                                </div>
+                                                <!--Multiple colors--->
+                                                <div class="multipleColors">
+                                                    <!----Left color started <div class="colorName colorNames">-->
+                                                    <div class="colorName colorNames" color-name="Cod gray"
+                                                        style="background: #0A090A"></div>
+                                                    <div class="colorName colorNames" color-name="Maroon"
+                                                        style="background: #800000"></div>
+                                                    <div class="colorName colorNames" color-name="Guardsman Red"
+                                                        style="background: #C00203"></div>
+                                                    <div class="colorName colorNames" color-name="Crusoe"
+                                                        style="background: #FD1A19"></div>
+                                                    <div class="colorName colorNames" color-name="Cinnamon"
+                                                        style="background: #034502"></div>
+                                                    <div class="colorName colorNames" color-name="Indochine"
+                                                        style="background: #805C02"></div>
+                                                    <div class="colorName colorNames" color-name="Blaze orange"
+                                                        style="background: #BF6601"></div>
+                                                    <div class="colorName colorNames" color-name="Olive"
+                                                        style="background: #FF7202"></div>
+                                                    <div class="colorName colorNames" color-name="Buddha Gold"
+                                                        style="background: #036602"></div>
+                                                    <div class="colorName colorNames" color-name="Turbo"
+                                                        style="background: #828A03"></div>
+                                                    <div class="colorName colorNames" color-name="Venetian"
+                                                        style="background: #C39D0B"></div>
+                                                    <div class="colorName colorNames" color-name="Limeade"
+                                                        style="background: #FFE501"></div>
+                                                    <div class="colorName colorNames" color-name="Rio Grande"
+                                                        style="background: #038803"></div>
+                                                    <div class="colorName colorNames" color-name="Turbo"
+                                                        style="background: #81B603"></div>
+                                                    <div class="colorName colorNames" color-name="Stratos"
+                                                        style="background: #C2CE03"></div>
+                                                    <div class="colorName colorNames" color-name="Siren"
+                                                        style="background: #FFE501"></div>
+                                                    <div class="colorName colorNames" color-name="Monza"
+                                                        style="background: #000032"></div>
+                                                    <div class="colorName colorNames" color-name="Torch Red"
+                                                        style="background: #800033"></div>
+                                                    <div class="colorName colorNames" color-name="Teal Blue"
+                                                        style="background: #C00138"></div>
+                                                    <div class="colorName colorNames" color-name="Russett"
+                                                        style="background: #FE0532"></div>
+                                                    <div class="colorName colorNames" color-name="Contessa"
+                                                        style="background: #024958"></div>
+                                                    <div class="colorName colorNames" color-name="Bitter sweet"
+                                                        style="background: #816059"></div>
+                                                    <div class="colorName colorNames" color-name="Copper Red"
+                                                        style="background: #C06D5B"></div>
+                                                    <div class="colorName colorNames" color-name="Battleship Gray"
+                                                        style="background: #FF7859"></div>
+                                                    <div class="colorName colorNames" color-name="Twine"
+                                                        style="background: #026B6B"></div>
+                                                    <div class="colorName colorNames" color-name="Macaroni & cheese"
+                                                        style="background: #80916D"></div>
+                                                    <div class="colorName colorNames" color-name="Camel"
+                                                        style="background: #C0A36C"></div>
+                                                    <div class="colorName colorNames" color-name="De York"
+                                                        style="background: #FEB56D"></div>
+                                                    <div class="colorName colorNames" color-name="Yellow Green"
+                                                        style="background: #026B6B"></div>
+                                                    <div class="colorName colorNames" color-name="Dolly"
+                                                        style="background: #81C080"></div>
+                                                    <div class="colorName colorNames" color-name="Stratos"
+                                                        style="background: #C1D97F"></div>
+                                                    <div class="colorName colorNames" color-name="Cardinal Pink"
+                                                        style="background: #FFF282"></div>
+                                                    <div class="colorName colorNames" color-name="Shiraz"
+                                                        style="background: #03024C"></div>
+                                                    <div class="colorName colorNames" color-name="Torch Red"
+                                                        style="background: #81044B"></div>
+                                                    <div class="colorName colorNames" color-name="Congress Blue"
+                                                        style="background: #C00248"></div>
+                                                    <div class="colorName colorNames" color-name="Rum"
+                                                        style="background: #FE0248"></div>
+                                                    <div class="colorName colorNames" color-name="Old Rose"
+                                                        style="background: #024986"></div>
+                                                    <div class="colorName colorNames" color-name="Geraldine"
+                                                        style="background: #816388"></div>
+                                                    <div class="colorName colorNames" color-name="Charm"
+                                                        style="background: #C37088"></div>
+                                                    <div class="colorName colorNames" color-name="Regen Gray"
+                                                        style="background: #FF7F87"></div>
+                                                    <div class="colorName colorNames" color-name="Malta"
+                                                        style="background: #046DA5"></div>
+                                                    <div class="colorName colorNames" color-name="Wax Flower"
+                                                        style="background: #8197A3"></div>
+                                                    <div class="colorName colorNames" color-name="Pacific Blue"
+                                                        style="background: #C1ABA3"></div>
+                                                    <div class="colorName colorNames" color-name="Half Baked"
+                                                        style="background: #FEBAA4"></div>
+                                                    <div class="colorName colorNames" color-name="Pixie Green"
+                                                        style="background: #0494C0"></div>
+                                                    <div class="colorName colorNames" color-name="Lemon Chiffon"
+                                                        style="background: #82C6BF"></div>
+                                                    <div class="colorName colorNames" color-name="Lucky Point"
+                                                        style="background: #C1E0C0"></div>
+                                                    <div class="colorName colorNames" color-name="Cardinal Pink"
+                                                        style="background: #FFF9CD"></div>
+                                                    <div class="colorName colorNames" color-name="Medium Red violet"
+                                                        style="background: #1C1A73"></div>
+                                                    <div class="colorName colorNames" color-name="Rose"
+                                                        style="background: #820265"></div>
+                                                    <div class="colorName colorNames" color-name="Cobalt"
+                                                        style="background: #CC3A7F"></div>
+                                                    <div class="colorName colorNames" color-name="Deluge"
+                                                        style="background: #FE115F"></div>
+                                                    <div class="colorName colorNames" color-name="Viola"
+                                                        style="background: #034BB2"></div>
+                                                    <div class="colorName colorNames" color-name="Tickle me Pink"
+                                                        style="background: #8066B2"></div>
+                                                    <div class="colorName colorNames" color-name="Science Blue"
+                                                        style="background: #C374B3"></div>
+                                                    <div class="colorName colorNames" color-name="Chetwode Blue"
+                                                        style="background: #FF82B2"></div>
+                                                    <div class="colorName colorNames" color-name="Logan"
+                                                        style="background: #0471D9"></div>
+                                                    <div class="colorName colorNames" color-name="Vista Blue"
+                                                        style="background: #7C92D1"></div>
+                                                    <div class="colorName colorNames" color-name="Azure Radiance"
+                                                        style="background: #B19FC8"></div>
+                                                    <div class="colorName colorNames" color-name="Cotton candy"
+                                                        style="background: #FFBDD7"></div>
+                                                    <div class="colorName colorNames" color-name="Azure"
+                                                        style="background: #0297FE"></div>
+                                                    <div class="colorName colorNames" color-name="Fresh Air"
+                                                        style="background: #ADDDFD"></div>
+                                                    <div class="colorName colorNames" color-name="Water"
+                                                        style="background: #CBE9FD"></div>
+                                                    <div class="colorName colorNames" color-name="White"
+                                                        style="background: #FFFFFF"></div>
+                                                </div>
+                                            </div>
+                                            <!--colors right side-->
+                                            <div class="right-side left-side">
+                                                <div class="display">
+                                                    <!---selected color-->
+                                                    <div class="selected-box ">
+                                                        <div class="blankBox"><span id="forlogo-checked"></span></div>
+                                                        <div class="selected-color selectlogoboxxx2"></div>
+                                                        <div class="color-name">
+                                                            <label>Fond : </label>
+                                                            <span id="nameOfColor" class="nametextrightloogo">&nbsp;
+                                                                Blue</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pen"><img src="images/selectColor.png"></div>
+                                                </div>
+                                                <!--Multiple colors--->
+                                                <div class="multipleColors rightMultiColor">
+                                                    <!--right color started <div class="colorName rightColors">-->
+                                                    <div class="colorName rightColors" color-name="Cod gray"
+                                                        style="background: #0A090A"></div>
+                                                    <div class="colorName rightColors" color-name="Maroon"
+                                                        style="background: #800000"></div>
+                                                    <div class="colorName rightColors" color-name="Guardsman Red"
+                                                        style="background: #C00203"></div>
+                                                    <div class="colorName rightColors" color-name="Crusoe"
+                                                        style="background: #FD1A19"></div>
+                                                    <div class="colorName rightColors" color-name="Cinnamon"
+                                                        style="background: #034502"></div>
+                                                    <div class="colorName rightColors" color-name="Indochine"
+                                                        style="background: #805C02"></div>
+                                                    <div class="colorName rightColors" color-name="Blaze orange"
+                                                        style="background: #BF6601"></div>
+                                                    <div class="colorName rightColors" color-name="Olive"
+                                                        style="background: #FF7202"></div>
+                                                    <div class="colorName rightColors" color-name="Buddha Gold"
+                                                        style="background: #036602"></div>
+                                                    <div class="colorName rightColors" color-name="Turbo"
+                                                        style="background: #828A03"></div>
+                                                    <div class="colorName rightColors" color-name="Venetian"
+                                                        style="background: #C39D0B"></div>
+                                                    <div class="colorName rightColors" color-name="Limeade"
+                                                        style="background: #FFE501"></div>
+                                                    <div class="colorName rightColors" color-name="Rio Grande"
+                                                        style="background: #038803"></div>
+                                                    <div class="colorName rightColors" color-name="Turbo"
+                                                        style="background: #81B603"></div>
+                                                    <div class="colorName rightColors" color-name="Stratos"
+                                                        style="background: #C2CE03"></div>
+                                                    <div class="colorName rightColors" color-name="Siren"
+                                                        style="background: #FFE501"></div>
+                                                    <div class="colorName rightColors" color-name="Monza"
+                                                        style="background: #000032"></div>
+                                                    <div class="colorName rightColors" color-name="Torch Red"
+                                                        style="background: #800033"></div>
+                                                    <div class="colorName rightColors" color-name="Teal Blue"
+                                                        style="background: #C00138"></div>
+                                                    <div class="colorName rightColors" color-name="Russett"
+                                                        style="background: #FE0532"></div>
+                                                    <div class="colorName rightColors" color-name="Contessa"
+                                                        style="background: #024958"></div>
+                                                    <div class="colorName rightColors" color-name="Bitter sweet"
+                                                        style="background: #816059"></div>
+                                                    <div class="colorName rightColors" color-name="Copper Red"
+                                                        style="background: #C06D5B"></div>
+                                                    <div class="colorName rightColors" color-name="Battleship Gray"
+                                                        style="background: #FF7859"></div>
+                                                    <div class="colorName rightColors" color-name="Twine"
+                                                        style="background: #026B6B"></div>
+                                                    <div class="colorName rightColors" color-name="Macaroni & cheese"
+                                                        style="background: #80916D"></div>
+                                                    <div class="colorName rightColors" color-name="Camel"
+                                                        style="background: #C0A36C"></div>
+                                                    <div class="colorName rightColors" color-name="De York"
+                                                        style="background: #FEB56D"></div>
+                                                    <div class="colorName rightColors" color-name="Yellow Green"
+                                                        style="background: #026B6B"></div>
+                                                    <div class="colorName rightColors" color-name="Dolly"
+                                                        style="background: #81C080"></div>
+                                                    <div class="colorName rightColors" color-name="Stratos"
+                                                        style="background: #C1D97F"></div>
+                                                    <div class="colorName rightColors" color-name="Cardinal Pink"
+                                                        style="background: #FFF282"></div>
+                                                    <div class="colorName rightColors" color-name="Shiraz"
+                                                        style="background: #03024C"></div>
+                                                    <div class="colorName rightColors" color-name="Torch Red"
+                                                        style="background: #81044B"></div>
+                                                    <div class="colorName rightColors" color-name="Congress Blue"
+                                                        style="background: #C00248"></div>
+                                                    <div class="colorName rightColors" color-name="Rum"
+                                                        style="background: #FE0248"></div>
+                                                    <div class="colorName rightColors" color-name="Old Rose"
+                                                        style="background: #024986"></div>
+                                                    <div class="colorName rightColors" color-name="Geraldine"
+                                                        style="background: #816388"></div>
+                                                    <div class="colorName rightColors" color-name="Charm"
+                                                        style="background: #C37088"></div>
+                                                    <div class="colorName rightColors" color-name="Regen Gray"
+                                                        style="background: #FF7F87"></div>
+                                                    <div class="colorName rightColors" color-name="Malta"
+                                                        style="background: #046DA5"></div>
+                                                    <div class="colorName rightColors" color-name="Wax Flower"
+                                                        style="background: #8197A3"></div>
+                                                    <div class="colorName rightColors" color-name="Pacific Blue"
+                                                        style="background: #C1ABA3"></div>
+                                                    <div class="colorName rightColors" color-name="Half Baked"
+                                                        style="background: #FEBAA4"></div>
+                                                    <div class="colorName rightColors" color-name="Pixie Green"
+                                                        style="background: #0494C0"></div>
+                                                    <div class="colorName rightColors" color-name="Lemon Chiffon"
+                                                        style="background: #82C6BF"></div>
+                                                    <div class="colorName rightColors" color-name="Lucky Point"
+                                                        style="background: #C1E0C0"></div>
+                                                    <div class="colorName rightColors" color-name="Cardinal Pink"
+                                                        style="background: #FFF9CD"></div>
+                                                    <div class="colorName rightColors" color-name="Medium Red violet"
+                                                        style="background: #1C1A73"></div>
+                                                    <div class="colorName rightColors" color-name="Rose"
+                                                        style="background: #820265"></div>
+                                                    <div class="colorName rightColors" color-name="Cobalt"
+                                                        style="background: #CC3A7F"></div>
+                                                    <div class="colorName rightColors" color-name="Deluge"
+                                                        style="background: #FE115F"></div>
+                                                    <div class="colorName rightColors" color-name="Viola"
+                                                        style="background: #034BB2"></div>
+                                                    <div class="colorName rightColors" color-name="Tickle me Pink"
+                                                        style="background: #8066B2"></div>
+                                                    <div class="colorName rightColors" color-name="Science Blue"
+                                                        style="background: #C374B3"></div>
+                                                    <div class="colorName rightColors" color-name="Chetwode Blue"
+                                                        style="background: #FF82B2"></div>
+                                                    <div class="colorName rightColors" color-name="Logan"
+                                                        style="background: #0471D9"></div>
+                                                    <div class="colorName rightColors" color-name="Vista Blue"
+                                                        style="background: #7C92D1"></div>
+                                                    <div class="colorName rightColors" color-name="Azure Radiance"
+                                                        style="background: #B19FC8"></div>
+                                                    <div class="colorName rightColors" color-name="Cotton candy"
+                                                        style="background: #FFBDD7"></div>
+                                                    <div class="colorName rightColors" color-name="Azure"
+                                                        style="background: #0297FE"></div>
+                                                    <div class="colorName rightColors" color-name="Fresh Air"
+                                                        style="background: #ADDDFD"></div>
+                                                    <div class="colorName rightColors" color-name="Water"
+                                                        style="background: #CBE9FD"></div>
+                                                    <div class="colorName rightColors" color-name="White"
+                                                        style="background: #FFFFFF"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </section>
+
+                                    <section id="mylitre-plan">
+                                        <div class="colors">
+                                            <!--colors left side-->
+                                            <div class="left-side">
+                                                <div class="display">
+                                                    <!---selected color-->
+                                                    <div class="selected-box">
+                                                        <div class="selected-color selectedbox3"></div>
+                                                        <div class="color-name">
+                                                            <label>Fond : </label>
+                                                            <span id="nameOfColor" class="nameOfColorlitre">&nbsp;
+                                                                Blue</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pen"><img src="images/selectColor.png"></div>
+                                                </div>
+                                                <!--Multiple colors--->
+                                                <div class="multipleColors">
+                                                    <!----Left color started <div class="colorName colorNames">-->
+                                                    <div class="colorName colorNames" color-name="Cod gray"
+                                                        style="background: #0A090A"></div>
+                                                    <div class="colorName colorNames" color-name="Maroon"
+                                                        style="background: #800000"></div>
+                                                    <div class="colorName colorNames" color-name="Guardsman Red"
+                                                        style="background: #C00203"></div>
+                                                    <div class="colorName colorNames" color-name="Crusoe"
+                                                        style="background: #FD1A19"></div>
+                                                    <div class="colorName colorNames" color-name="Cinnamon"
+                                                        style="background: #034502"></div>
+                                                    <div class="colorName colorNames" color-name="Indochine"
+                                                        style="background: #805C02"></div>
+                                                    <div class="colorName colorNames" color-name="Blaze orange"
+                                                        style="background: #BF6601"></div>
+                                                    <div class="colorName colorNames" color-name="Olive"
+                                                        style="background: #FF7202"></div>
+                                                    <div class="colorName colorNames" color-name="Buddha Gold"
+                                                        style="background: #036602"></div>
+                                                    <div class="colorName colorNames" color-name="Turbo"
+                                                        style="background: #828A03"></div>
+                                                    <div class="colorName colorNames" color-name="Venetian"
+                                                        style="background: #C39D0B"></div>
+                                                    <div class="colorName colorNames" color-name="Limeade"
+                                                        style="background: #FFE501"></div>
+                                                    <div class="colorName colorNames" color-name="Rio Grande"
+                                                        style="background: #038803"></div>
+                                                    <div class="colorName colorNames" color-name="Turbo"
+                                                        style="background: #81B603"></div>
+                                                    <div class="colorName colorNames" color-name="Stratos"
+                                                        style="background: #C2CE03"></div>
+                                                    <div class="colorName colorNames" color-name="Siren"
+                                                        style="background: #FFE501"></div>
+                                                    <div class="colorName colorNames" color-name="Monza"
+                                                        style="background: #000032"></div>
+                                                    <div class="colorName colorNames" color-name="Torch Red"
+                                                        style="background: #800033"></div>
+                                                    <div class="colorName colorNames" color-name="Teal Blue"
+                                                        style="background: #C00138"></div>
+                                                    <div class="colorName colorNames" color-name="Russett"
+                                                        style="background: #FE0532"></div>
+                                                    <div class="colorName colorNames" color-name="Contessa"
+                                                        style="background: #024958"></div>
+                                                    <div class="colorName colorNames" color-name="Bitter sweet"
+                                                        style="background: #816059"></div>
+                                                    <div class="colorName colorNames" color-name="Copper Red"
+                                                        style="background: #C06D5B"></div>
+                                                    <div class="colorName colorNames" color-name="Battleship Gray"
+                                                        style="background: #FF7859"></div>
+                                                    <div class="colorName colorNames" color-name="Twine"
+                                                        style="background: #026B6B"></div>
+                                                    <div class="colorName colorNames" color-name="Macaroni & cheese"
+                                                        style="background: #80916D"></div>
+                                                    <div class="colorName colorNames" color-name="Camel"
+                                                        style="background: #C0A36C"></div>
+                                                    <div class="colorName colorNames" color-name="De York"
+                                                        style="background: #FEB56D"></div>
+                                                    <div class="colorName colorNames" color-name="Yellow Green"
+                                                        style="background: #026B6B"></div>
+                                                    <div class="colorName colorNames" color-name="Dolly"
+                                                        style="background: #81C080"></div>
+                                                    <div class="colorName colorNames" color-name="Stratos"
+                                                        style="background: #C1D97F"></div>
+                                                    <div class="colorName colorNames" color-name="Cardinal Pink"
+                                                        style="background: #FFF282"></div>
+                                                    <div class="colorName colorNames" color-name="Shiraz"
+                                                        style="background: #03024C"></div>
+                                                    <div class="colorName colorNames" color-name="Torch Red"
+                                                        style="background: #81044B"></div>
+                                                    <div class="colorName colorNames" color-name="Congress Blue"
+                                                        style="background: #C00248"></div>
+                                                    <div class="colorName colorNames" color-name="Rum"
+                                                        style="background: #FE0248"></div>
+                                                    <div class="colorName colorNames" color-name="Old Rose"
+                                                        style="background: #024986"></div>
+                                                    <div class="colorName colorNames" color-name="Geraldine"
+                                                        style="background: #816388"></div>
+                                                    <div class="colorName colorNames" color-name="Charm"
+                                                        style="background: #C37088"></div>
+                                                    <div class="colorName colorNames" color-name="Regen Gray"
+                                                        style="background: #FF7F87"></div>
+                                                    <div class="colorName colorNames" color-name="Malta"
+                                                        style="background: #046DA5"></div>
+                                                    <div class="colorName colorNames" color-name="Wax Flower"
+                                                        style="background: #8197A3"></div>
+                                                    <div class="colorName colorNames" color-name="Pacific Blue"
+                                                        style="background: #C1ABA3"></div>
+                                                    <div class="colorName colorNames" color-name="Half Baked"
+                                                        style="background: #FEBAA4"></div>
+                                                    <div class="colorName colorNames" color-name="Pixie Green"
+                                                        style="background: #0494C0"></div>
+                                                    <div class="colorName colorNames" color-name="Lemon Chiffon"
+                                                        style="background: #82C6BF"></div>
+                                                    <div class="colorName colorNames" color-name="Lucky Point"
+                                                        style="background: #C1E0C0"></div>
+                                                    <div class="colorName colorNames" color-name="Cardinal Pink"
+                                                        style="background: #FFF9CD"></div>
+                                                    <div class="colorName colorNames" color-name="Medium Red violet"
+                                                        style="background: #1C1A73"></div>
+                                                    <div class="colorName colorNames" color-name="Rose"
+                                                        style="background: #820265"></div>
+                                                    <div class="colorName colorNames" color-name="Cobalt"
+                                                        style="background: #CC3A7F"></div>
+                                                    <div class="colorName colorNames" color-name="Deluge"
+                                                        style="background: #FE115F"></div>
+                                                    <div class="colorName colorNames" color-name="Viola"
+                                                        style="background: #034BB2"></div>
+                                                    <div class="colorName colorNames" color-name="Tickle me Pink"
+                                                        style="background: #8066B2"></div>
+                                                    <div class="colorName colorNames" color-name="Science Blue"
+                                                        style="background: #C374B3"></div>
+                                                    <div class="colorName colorNames" color-name="Chetwode Blue"
+                                                        style="background: #FF82B2"></div>
+                                                    <div class="colorName colorNames" color-name="Logan"
+                                                        style="background: #0471D9"></div>
+                                                    <div class="colorName colorNames" color-name="Vista Blue"
+                                                        style="background: #7C92D1"></div>
+                                                    <div class="colorName colorNames" color-name="Azure Radiance"
+                                                        style="background: #B19FC8"></div>
+                                                    <div class="colorName colorNames" color-name="Cotton candy"
+                                                        style="background: #FFBDD7"></div>
+                                                    <div class="colorName colorNames" color-name="Azure"
+                                                        style="background: #0297FE"></div>
+                                                    <div class="colorName colorNames" color-name="Fresh Air"
+                                                        style="background: #ADDDFD"></div>
+                                                    <div class="colorName colorNames" color-name="Water"
+                                                        style="background: #CBE9FD"></div>
+                                                    <div class="colorName colorNames" color-name="White"
+                                                        style="background: #FFFFFF"></div>
+                                                </div>
+
+
+
+
+                                            </div>
+                                            <!--colors right side-->
+                                            <div class="right-side left-side">
+                                                <div class="display">
+                                                    <!---selected color-->
+                                                    <div class="selected-box">
+                                                        <div class="blankBox blankboxlitre"><span class=""
+                                                                id="forlitre-checked"></span></div>
+                                                        <div class="selected-color litreselectboxright"></div>
+                                                        <div class="color-name">
+                                                            <label>Fond : </label>
+                                                            <span id="nameOfColor" class="rightTextlitre">&nbsp;
+                                                                Blue</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pen"><img src="images/selectColor.png"></div>
+                                                </div>
+                                                <!--Multiple colors--->
+                                                <div class="multipleColors rightMultiColor">
+                                                    <!--right color started <div class="colorName rightColors">-->
+                                                    <div class="colorName rightColors" color-name="Cod gray"
+                                                        style="background: #0A090A"></div>
+                                                    <div class="colorName rightColors" color-name="Maroon"
+                                                        style="background: #800000"></div>
+                                                    <div class="colorName rightColors" color-name="Guardsman Red"
+                                                        style="background: #C00203"></div>
+                                                    <div class="colorName rightColors" color-name="Crusoe"
+                                                        style="background: #FD1A19"></div>
+                                                    <div class="colorName rightColors" color-name="Cinnamon"
+                                                        style="background: #034502"></div>
+                                                    <div class="colorName rightColors" color-name="Indochine"
+                                                        style="background: #805C02"></div>
+                                                    <div class="colorName rightColors" color-name="Blaze orange"
+                                                        style="background: #BF6601"></div>
+                                                    <div class="colorName rightColors" color-name="Olive"
+                                                        style="background: #FF7202"></div>
+                                                    <div class="colorName rightColors" color-name="Buddha Gold"
+                                                        style="background: #036602"></div>
+                                                    <div class="colorName rightColors" color-name="Turbo"
+                                                        style="background: #828A03"></div>
+                                                    <div class="colorName rightColors" color-name="Venetian"
+                                                        style="background: #C39D0B"></div>
+                                                    <div class="colorName rightColors" color-name="Limeade"
+                                                        style="background: #FFE501"></div>
+                                                    <div class="colorName rightColors" color-name="Rio Grande"
+                                                        style="background: #038803"></div>
+                                                    <div class="colorName rightColors" color-name="Turbo"
+                                                        style="background: #81B603"></div>
+                                                    <div class="colorName rightColors" color-name="Stratos"
+                                                        style="background: #C2CE03"></div>
+                                                    <div class="colorName rightColors" color-name="Siren"
+                                                        style="background: #FFE501"></div>
+                                                    <div class="colorName rightColors" color-name="Monza"
+                                                        style="background: #000032"></div>
+                                                    <div class="colorName rightColors" color-name="Torch Red"
+                                                        style="background: #800033"></div>
+                                                    <div class="colorName rightColors" color-name="Teal Blue"
+                                                        style="background: #C00138"></div>
+                                                    <div class="colorName rightColors" color-name="Russett"
+                                                        style="background: #FE0532"></div>
+                                                    <div class="colorName rightColors" color-name="Contessa"
+                                                        style="background: #024958"></div>
+                                                    <div class="colorName rightColors" color-name="Bitter sweet"
+                                                        style="background: #816059"></div>
+                                                    <div class="colorName rightColors" color-name="Copper Red"
+                                                        style="background: #C06D5B"></div>
+                                                    <div class="colorName rightColors" color-name="Battleship Gray"
+                                                        style="background: #FF7859"></div>
+                                                    <div class="colorName rightColors" color-name="Twine"
+                                                        style="background: #026B6B"></div>
+                                                    <div class="colorName rightColors" color-name="Macaroni & cheese"
+                                                        style="background: #80916D"></div>
+                                                    <div class="colorName rightColors" color-name="Camel"
+                                                        style="background: #C0A36C"></div>
+                                                    <div class="colorName rightColors" color-name="De York"
+                                                        style="background: #FEB56D"></div>
+                                                    <div class="colorName rightColors" color-name="Yellow Green"
+                                                        style="background: #026B6B"></div>
+                                                    <div class="colorName rightColors" color-name="Dolly"
+                                                        style="background: #81C080"></div>
+                                                    <div class="colorName rightColors" color-name="Stratos"
+                                                        style="background: #C1D97F"></div>
+                                                    <div class="colorName rightColors" color-name="Cardinal Pink"
+                                                        style="background: #FFF282"></div>
+                                                    <div class="colorName rightColors" color-name="Shiraz"
+                                                        style="background: #03024C"></div>
+                                                    <div class="colorName rightColors" color-name="Torch Red"
+                                                        style="background: #81044B"></div>
+                                                    <div class="colorName rightColors" color-name="Congress Blue"
+                                                        style="background: #C00248"></div>
+                                                    <div class="colorName rightColors" color-name="Rum"
+                                                        style="background: #FE0248"></div>
+                                                    <div class="colorName rightColors" color-name="Old Rose"
+                                                        style="background: #024986"></div>
+                                                    <div class="colorName rightColors" color-name="Geraldine"
+                                                        style="background: #816388"></div>
+                                                    <div class="colorName rightColors" color-name="Charm"
+                                                        style="background: #C37088"></div>
+                                                    <div class="colorName rightColors" color-name="Regen Gray"
+                                                        style="background: #FF7F87"></div>
+                                                    <div class="colorName rightColors" color-name="Malta"
+                                                        style="background: #046DA5"></div>
+                                                    <div class="colorName rightColors" color-name="Wax Flower"
+                                                        style="background: #8197A3"></div>
+                                                    <div class="colorName rightColors" color-name="Pacific Blue"
+                                                        style="background: #C1ABA3"></div>
+                                                    <div class="colorName rightColors" color-name="Half Baked"
+                                                        style="background: #FEBAA4"></div>
+                                                    <div class="colorName rightColors" color-name="Pixie Green"
+                                                        style="background: #0494C0"></div>
+                                                    <div class="colorName rightColors" color-name="Lemon Chiffon"
+                                                        style="background: #82C6BF"></div>
+                                                    <div class="colorName rightColors" color-name="Lucky Point"
+                                                        style="background: #C1E0C0"></div>
+                                                    <div class="colorName rightColors" color-name="Cardinal Pink"
+                                                        style="background: #FFF9CD"></div>
+                                                    <div class="colorName rightColors" color-name="Medium Red violet"
+                                                        style="background: #1C1A73"></div>
+                                                    <div class="colorName rightColors" color-name="Rose"
+                                                        style="background: #820265"></div>
+                                                    <div class="colorName rightColors" color-name="Cobalt"
+                                                        style="background: #CC3A7F"></div>
+                                                    <div class="colorName rightColors" color-name="Deluge"
+                                                        style="background: #FE115F"></div>
+                                                    <div class="colorName rightColors" color-name="Viola"
+                                                        style="background: #034BB2"></div>
+                                                    <div class="colorName rightColors" color-name="Tickle me Pink"
+                                                        style="background: #8066B2"></div>
+                                                    <div class="colorName rightColors" color-name="Science Blue"
+                                                        style="background: #C374B3"></div>
+                                                    <div class="colorName rightColors" color-name="Chetwode Blue"
+                                                        style="background: #FF82B2"></div>
+                                                    <div class="colorName rightColors" color-name="Logan"
+                                                        style="background: #0471D9"></div>
+                                                    <div class="colorName rightColors" color-name="Vista Blue"
+                                                        style="background: #7C92D1"></div>
+                                                    <div class="colorName rightColors" color-name="Azure Radiance"
+                                                        style="background: #B19FC8"></div>
+                                                    <div class="colorName rightColors" color-name="Cotton candy"
+                                                        style="background: #FFBDD7"></div>
+                                                    <div class="colorName rightColors" color-name="Azure"
+                                                        style="background: #0297FE"></div>
+                                                    <div class="colorName rightColors" color-name="Fresh Air"
+                                                        style="background: #ADDDFD"></div>
+                                                    <div class="colorName rightColors" color-name="Water"
+                                                        style="background: #CBE9FD"></div>
+                                                    <div class="colorName rightColors" color-name="White"
+                                                        style="background: #FFFFFF"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+
+
+
+
+
+
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </section>
+
+
+                </div>
+
+
+                <div class="bill-content">
+
+                    <div class="bill-header">
+                        <span class="bill-icon ms-1 me-3"><img src="/images/bill-icon.png" alt=""></span>
+                        <span class="bill-heading mt-2">Bilan commande </span>
+
+                    </div>
+                    <div class="bill-inner">
+                        <div class="bill-text">
+                            <div class="bill-img">
+
+                                <img class="ms-1 me-1" src="images/Groupe de masqu (1).png" alt="" width="55px">
+
+
+
+                            </div>
+                            <div class="bill-data ms-3">
+                                <div class="data1">Base plexi glace immatriculation </div>
+                                <div class="data2">52 x 11 cm</div>
+                                <div class="data3">20,00 €</div>
+
+
+                            </div>
+                            <div class="delete-icon">
+                                <img class="mb-3" src="/images/trash.png" alt="" width="9px">
+
+                            </div>
+
+                        </div>
+                        <div class="bill-quantity">
+
+                            <div class="qty-text">
+                                Quantité
+
+                            </div>
+                            <div class="qty-btn">
+                                <span><img src="/images/minus.png" alt=""></span>
+                                <span class="">1</span>
+                                <span><img src="/images/plus.png" alt=""></span>
+                            </div>
+
+                        </div>
+                        <div class="bill-total">
+                            <span>Total</span>
+                            <span>20,00 €</span>
+
+                        </div>
+
+                        <button class="panier-btn">Ajouter au panier</button>
+                        <button class="register-btn">Enregistrer pour plus tard</button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="below-btns">
+                <button class="Preci-btn">Precedent</button>
+            <button class="lastone-btn">Suivant</button>
+            </div>
+            
+
+        </div>
+
+    </section>
+
+    <section id="mobile-version">
+        <header class="header">
+            <div class="container">
+                <div class="row rowdata">
+                    <div class="data-box">
+                        <div class="nav-icon mbl-icon-box">
+                            <span class=" line3"><img class="nav-toggle me-2 mt-2 " src="/images/3line.png" alt=""
+                                    width="22px"></span>
+                            <span><img class="mt-1" src="/images/search-i.png" alt="" width="40px"></span>
+                        </div>
+
+                        <div class="nav-icon mbl-icon-box">
+                            <span><img src="/images/logo.png" alt=""></span>
+                        </div>
+
+                        <div class="nav-icon mbl-icon-box">
+                            <span><img class="me-2 mt-2" src="/images/login.png" alt=""></span>
+                            <span><img class="me-2 mt-1" src="/images/shop.png" alt="" width="30px"></span>
+                        </div>
+
+
+
+
+                    </div>
+                    <nav>
+                        <ul class="mbl-ul">
+                            <li><a href="#">Market</a></li>
+                            <li><a href="#">Location</a></li>
+                            <li><a href="#">Immatriculation</a></li>
+                            <li><a href="#">Entretien</a></li>
+                            <li><a href="#">Car wash</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="full-mobile-container">
+            <div class="mobile-landing">
+                <p>Créer votre plaque d'immatriculation<br>
+                    et exploiter votre créativité</p>
+            </div>
+
+        </div>
+
+        <div class="mbl-switch-box">
+            <div class="mbl-type-vehicle ms-1">
+                Type de véhicule
+            </div>
+            <div class="mbl-multiple-btn">
+                <div class="btn-boxs">
+                    <span>Auto</span>
+                    <span>Moto</span>
+                    <span class="selected">4x4</span>
+                </div>
+            </div>
+            <div class="mbl-main-textbox">
+                <div class="inner-area-textbox-mbl">
+                    <div class="mbl-left-area-textbox">
+                        <span class="mbl-star-box">
+                            <i class="fa-solid fa-star mbl-s1"></i>
+                            <i class="fa-solid fa-star mbl-s2"></i>
+                            <i class="fa-solid fa-star mbl-s3"></i>
+                            <i class="fa-solid fa-star mbl-s4"></i>
+                            <i class="fa-solid fa-star mbl-s5"></i>
+                            <i class="fa-solid fa-star mbl-s7"></i>
+                            <i class="fa-solid fa-star mbl-s8"></i>
+                            <i class="fa-solid fa-star mbl-s9"></i>
+
+                        </span>
+                        <div class="mbl-logo-F">
+                            F
+                        </div>
+
+
+                    </div>
+                    <div class="mid-area-textbox">
+                        <input type="text" maxlength="3">
+                        <div class="dashed-box">
+                            <span></span>
+                        </div>
+                        <input type="number" onKeyDown="if(this.value.length==3 && event.keyCode!=8) return false;" />
+                        <div class="dashed-box">
+                            <span></span>
+                        </div>
+                        <input type="text" maxlength="3">
+
+                    </div>
+                    <div class="right-area-textbox"><img src="images/right.png" alt="" height="86px"></div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="color-change">
+            <div class="euro-header">
+                <span id="prob">Euro bande <span><img class="ms-1 mb-1" src="/images/down-arrow.png"
+                            alt=""></span></span>
+                <span><img src="/images/reset.png" alt=""></span>
+
+            </div>
+            <div class="menuforeuro ">
+                <ul id="checking">
+                    <li><a href="#">Numero</a></li>
+                    <li><a href="#">Departement</a></li>
+                    <li><a href="#">Fond</a></li>
+                    <li><a href="#">Petit texte</a></li>
+                    <li><a href="#">Contour</a></li>
+                </ul>
+            </div>
+            <div class="section-change-btn">
+
+                <span class="select-plan s1-mbl">Arriére plan</span>
+                <span class="s2-mbl">Logo</span>
+                <span class="s3-mbl">Lettre</span>
+            </div>
+
+            <section id="my-arrierplan-mbl">
+
+
+                <div class="color-portion">
+                    <div class="fond-box me-3" id="arialboxleft"></div>
+                    <!------------------------------------------------------left continue-->
+                    <div id="colorForMenu" class="mobl">
+
+                        <div class="uniqueone">
+                            <!-----colors for left started------>
+                            <div class="colorNameMobl moblLeft" color-name="Cod gray" style="background: #0A090A"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Maroon" style="background: #800000"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Guardsman Red" style="background: #C00203">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Crusoe" style="background: #FD1A19"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Cinnamon" style="background: #034502"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Indochine" style="background: #805C02">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Blaze orange" style="background: #BF6601">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Olive" style="background: #FF7202"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Buddha Gold" style="background: #036602">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Turbo" style="background: #828A03"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Venetian" style="background: #C39D0B"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Limeade" style="background: #FFE501"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Rio Grande" style="background: #038803">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Turbo" style="background: #81B603"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Stratos" style="background: #C2CE03"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Siren" style="background: #FFE501"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Monza" style="background: #000032"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Torch Red" style="background: #800033">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Teal Blue" style="background: #C00138">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Russett" style="background: #FE0532"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Contessa" style="background: #024958"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Bitter sweet" style="background: #816059">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Copper Red" style="background: #C06D5B">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Battleship Gray"
+                                style="background: #FF7859"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Twine" style="background: #026B6B"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Macaroni & cheese"
+                                style="background: #80916D"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Camel" style="background: #C0A36C"></div>
+                            <div class="colorNameMobl moblLeft" color-name="De York" style="background: #FEB56D"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Yellow Green" style="background: #026B6B">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Dolly" style="background: #81C080"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Stratos" style="background: #C1D97F"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Cardinal Pink" style="background: #FFF282">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Shiraz" style="background: #03024C"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Torch Red" style="background: #81044B">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Congress Blue" style="background: #C00248">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Rum" style="background: #FE0248"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Old Rose" style="background: #024986"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Geraldine" style="background: #816388">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Charm" style="background: #C37088"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Regen Gray" style="background: #FF7F87">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Malta" style="background: #046DA5"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Wax Flower" style="background: #8197A3">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Pacific Blue" style="background: #C1ABA3">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Half Baked" style="background: #FEBAA4">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Pixie Green" style="background: #0494C0">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Lemon Chiffon" style="background: #82C6BF">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Lucky Point" style="background: #C1E0C0">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Cardinal Pink" style="background: #FFF9CD">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Medium Red violet"
+                                style="background: #1C1A73"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Rose" style="background: #820265"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Cobalt" style="background: #CC3A7F"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Deluge" style="background: #FE115F"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Viola" style="background: #034BB2"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Tickle me Pink" style="background: #8066B2">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Science Blue" style="background: #C374B3">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Chetwode Blue" style="background: #FF82B2">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Logan" style="background: #0471D9"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Vista Blue" style="background: #7C92D1">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Azure Radiance" style="background: #B19FC8">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Cotton candy" style="background: #FFBDD7">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Azure" style="background: #0297FE"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Fresh Air" style="background: #ADDDFD">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Water" style="background: #CBE9FD"></div>
+                            <div class="colorNameMobl moblLeft" color-name="White" style="background: #FFFFFF"></div>
+                            <!-------colors for left ended------>
+
+                        </div>
+                        <!-------colors for left ended------>
+                    </div>
+                    <div class="color-text-mbl">Couleur de fond <span><img class="ms-2" src="/images/eyedropper.png"
+                                alt=""></span></div>
+
+                </div>
+                <div class="border-portion">
+                    <label class="containers">
+                        <input type="checkbox" id="mblarialcheck">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div class="border-twice-box">
+                        <div class="border-box  me-3" id="arialboxright"></div>
+                        <!------paste from here for left side color of mobile---->
+                        <div id="colorForRight" class="mobl">
+                            <div class="uniqueone">
+                                <!-----colors for right started------>
+                                <div class="colorNameMobl moblRight" color-name="Cod gray" style="background: #0A090A">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Maroon" style="background: #800000">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Guardsman Red"
+                                    style="background: #C00203"></div>
+                                <div class="colorNameMobl moblRight" color-name="Crusoe" style="background: #FD1A19">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Cinnamon" style="background: #034502">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Indochine" style="background: #805C02">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Blaze orange"
+                                    style="background: #BF6601"></div>
+                                <div class="colorNameMobl moblRight" color-name="Olive" style="background: #FF7202">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Buddha Gold"
+                                    style="background: #036602"></div>
+                                <div class="colorNameMobl moblRight" color-name="Turbo" style="background: #828A03">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Venetian" style="background: #C39D0B">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Limeade" style="background: #FFE501">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Rio Grande"
+                                    style="background: #038803"></div>
+                                <div class="colorNameMobl moblRight" color-name="Turbo" style="background: #81B603">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Stratos" style="background: #C2CE03">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Siren" style="background: #FFE501">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Monza" style="background: #000032">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Torch Red" style="background: #800033">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Teal Blue" style="background: #C00138">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Russett" style="background: #FE0532">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Contessa" style="background: #024958">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Bitter sweet"
+                                    style="background: #816059"></div>
+                                <div class="colorNameMobl moblRight" color-name="Copper Red"
+                                    style="background: #C06D5B"></div>
+                                <div class="colorNameMobl moblRight" color-name="Battleship Gray"
+                                    style="background: #FF7859"></div>
+                                <div class="colorNameMobl moblRight" color-name="Twine" style="background: #026B6B">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Macaroni & cheese"
+                                    style="background: #80916D"></div>
+                                <div class="colorNameMobl moblRight" color-name="Camel" style="background: #C0A36C">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="De York" style="background: #FEB56D">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Yellow Green"
+                                    style="background: #026B6B"></div>
+                                <div class="colorNameMobl moblRight" color-name="Dolly" style="background: #81C080">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Stratos" style="background: #C1D97F">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Cardinal Pink"
+                                    style="background: #FFF282"></div>
+                                <div class="colorNameMobl moblRight" color-name="Shiraz" style="background: #03024C">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Torch Red" style="background: #81044B">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Congress Blue"
+                                    style="background: #C00248"></div>
+                                <div class="colorNameMobl moblRight" color-name="Rum" style="background: #FE0248"></div>
+                                <div class="colorNameMobl moblRight" color-name="Old Rose" style="background: #024986">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Geraldine" style="background: #816388">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Charm" style="background: #C37088">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Regen Gray"
+                                    style="background: #FF7F87"></div>
+                                <div class="colorNameMobl moblRight" color-name="Malta" style="background: #046DA5">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Wax Flower"
+                                    style="background: #8197A3"></div>
+                                <div class="colorNameMobl moblRight" color-name="Pacific Blue"
+                                    style="background: #C1ABA3"></div>
+                                <div class="colorNameMobl moblRight" color-name="Half Baked"
+                                    style="background: #FEBAA4"></div>
+                                <div class="colorNameMobl moblRight" color-name="Pixie Green"
+                                    style="background: #0494C0"></div>
+                                <div class="colorNameMobl moblRight" color-name="Lemon Chiffon"
+                                    style="background: #82C6BF"></div>
+                                <div class="colorNameMobl moblRight" color-name="Lucky Point"
+                                    style="background: #C1E0C0"></div>
+                                <div class="colorNameMobl moblRight" color-name="Cardinal Pink"
+                                    style="background: #FFF9CD"></div>
+                                <div class="colorNameMobl moblRight" color-name="Medium Red violet"
+                                    style="background: #1C1A73"></div>
+                                <div class="colorNameMobl moblRight" color-name="Rose" style="background: #820265">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Cobalt" style="background: #CC3A7F">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Deluge" style="background: #FE115F">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Viola" style="background: #034BB2">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Tickle me Pink"
+                                    style="background: #8066B2"></div>
+                                <div class="colorNameMobl moblRight" color-name="Science Blue"
+                                    style="background: #C374B3"></div>
+                                <div class="colorNameMobl moblRight" color-name="Chetwode Blue"
+                                    style="background: #FF82B2"></div>
+                                <div class="colorNameMobl moblRight" color-name="Logan" style="background: #0471D9">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Vista Blue"
+                                    style="background: #7C92D1"></div>
+                                <div class="colorNameMobl moblRight" color-name="Azure Radiance"
+                                    style="background: #B19FC8"></div>
+                                <div class="colorNameMobl moblRight" color-name="Cotton candy"
+                                    style="background: #FFBDD7"></div>
+                                <div class="colorNameMobl moblRight" color-name="Azure" style="background: #0297FE">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Fresh Air" style="background: #ADDDFD">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Water" style="background: #CBE9FD">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="White" style="background: #FFFFFF">
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-------------------------------------------------------right continue-->
+                        <div id="colorForRight"></div>
+                    </div>
+                    <div class="border-text-mbl">Couleur de contour <span><img class="ms-2" src="/images/eyedropper.png"
+                                alt=""></span></div>
+
+                </div>
+
+                <div class="txt-png">
+                    <span>Téléchargez vos images</span><span class="png-jpg"> : (PNG , JPG)</span>
+
+                </div>
+                <div class="upload-to-cloud">
+                    <div class="upload-section">
+                        <span class="upl-icon"><img src="/images/upload-in-cloud.png" alt=""></span>
+                        <span class="upl-text">Charger une image</span>
+
+                    </div>
+                </div>
+                <div class="explorier-mbl">
+                    <div class="explorier-btn-mbl">
+                        <span><img class="mb-1 me-1" src="/images/search (1).png" alt=""></span>
+                        <span>Explorer</span>
+
+                    </div>
+                </div>
+                <div class="suivant-btns">
+                    <span class="Précédent">Précédent</span>
+                    <span class="Suivant">Suivant</span>
+
+                </div>
+
+            </section>
+
+            <section id="mylogo-plan-mbl">
+
+
+                <div class="color-portion">
+                    <div class="fond-box fond-box2 me-3" id="logoboxleft"></div>
+                    <!------------------------------------------------------left continue-->
+                    <div id="colorForMenutwo" class="mobl">
+
+                        <div class="uniqueone">
+                            <!-----colors for left started------>
+                            <div class="colorNameMobl moblLeft" color-name="Cod gray" style="background: #0A090A"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Maroon" style="background: #800000"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Guardsman Red" style="background: #C00203">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Crusoe" style="background: #FD1A19"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Cinnamon" style="background: #034502"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Indochine" style="background: #805C02">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Blaze orange" style="background: #BF6601">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Olive" style="background: #FF7202"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Buddha Gold" style="background: #036602">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Turbo" style="background: #828A03"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Venetian" style="background: #C39D0B"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Limeade" style="background: #FFE501"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Rio Grande" style="background: #038803">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Turbo" style="background: #81B603"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Stratos" style="background: #C2CE03"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Siren" style="background: #FFE501"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Monza" style="background: #000032"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Torch Red" style="background: #800033">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Teal Blue" style="background: #C00138">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Russett" style="background: #FE0532"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Contessa" style="background: #024958"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Bitter sweet" style="background: #816059">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Copper Red" style="background: #C06D5B">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Battleship Gray"
+                                style="background: #FF7859"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Twine" style="background: #026B6B"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Macaroni & cheese"
+                                style="background: #80916D"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Camel" style="background: #C0A36C"></div>
+                            <div class="colorNameMobl moblLeft" color-name="De York" style="background: #FEB56D"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Yellow Green" style="background: #026B6B">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Dolly" style="background: #81C080"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Stratos" style="background: #C1D97F"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Cardinal Pink" style="background: #FFF282">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Shiraz" style="background: #03024C"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Torch Red" style="background: #81044B">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Congress Blue" style="background: #C00248">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Rum" style="background: #FE0248"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Old Rose" style="background: #024986"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Geraldine" style="background: #816388">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Charm" style="background: #C37088"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Regen Gray" style="background: #FF7F87">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Malta" style="background: #046DA5"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Wax Flower" style="background: #8197A3">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Pacific Blue" style="background: #C1ABA3">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Half Baked" style="background: #FEBAA4">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Pixie Green" style="background: #0494C0">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Lemon Chiffon" style="background: #82C6BF">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Lucky Point" style="background: #C1E0C0">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Cardinal Pink" style="background: #FFF9CD">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Medium Red violet"
+                                style="background: #1C1A73"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Rose" style="background: #820265"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Cobalt" style="background: #CC3A7F"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Deluge" style="background: #FE115F"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Viola" style="background: #034BB2"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Tickle me Pink" style="background: #8066B2">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Science Blue" style="background: #C374B3">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Chetwode Blue" style="background: #FF82B2">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Logan" style="background: #0471D9"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Vista Blue" style="background: #7C92D1">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Azure Radiance" style="background: #B19FC8">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Cotton candy" style="background: #FFBDD7">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Azure" style="background: #0297FE"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Fresh Air" style="background: #ADDDFD">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Water" style="background: #CBE9FD"></div>
+                            <div class="colorNameMobl moblLeft" color-name="White" style="background: #FFFFFF"></div>
+                            <!-------colors for left ended------>
+
+                        </div>
+                        <!-------colors for left ended------>
+                    </div>
+                    <div class="color-text-mbl">Couleur de fond <span><img class="ms-2" src="/images/eyedropper.png"
+                                alt=""></span></div>
+
+                </div>
+                <div class="border-portion">
+                    <label class="containers">
+                        <input type="checkbox" id="mblarialcheck2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div class="border-twice-box">
+                        <div class="border-box border-box2  me-3" id="logoboxright"></div>
+                        <!------paste from here for left side color of mobile---->
+                        <div id="colorForRighttwo" class="mobl">
+                            <div class="uniqueone">
+                                <!-----colors for right started------>
+                                <div class="colorNameMobl moblRight" color-name="Cod gray" style="background: #0A090A">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Maroon" style="background: #800000">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Guardsman Red"
+                                    style="background: #C00203"></div>
+                                <div class="colorNameMobl moblRight" color-name="Crusoe" style="background: #FD1A19">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Cinnamon" style="background: #034502">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Indochine" style="background: #805C02">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Blaze orange"
+                                    style="background: #BF6601"></div>
+                                <div class="colorNameMobl moblRight" color-name="Olive" style="background: #FF7202">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Buddha Gold"
+                                    style="background: #036602"></div>
+                                <div class="colorNameMobl moblRight" color-name="Turbo" style="background: #828A03">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Venetian" style="background: #C39D0B">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Limeade" style="background: #FFE501">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Rio Grande"
+                                    style="background: #038803"></div>
+                                <div class="colorNameMobl moblRight" color-name="Turbo" style="background: #81B603">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Stratos" style="background: #C2CE03">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Siren" style="background: #FFE501">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Monza" style="background: #000032">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Torch Red" style="background: #800033">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Teal Blue" style="background: #C00138">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Russett" style="background: #FE0532">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Contessa" style="background: #024958">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Bitter sweet"
+                                    style="background: #816059"></div>
+                                <div class="colorNameMobl moblRight" color-name="Copper Red"
+                                    style="background: #C06D5B"></div>
+                                <div class="colorNameMobl moblRight" color-name="Battleship Gray"
+                                    style="background: #FF7859"></div>
+                                <div class="colorNameMobl moblRight" color-name="Twine" style="background: #026B6B">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Macaroni & cheese"
+                                    style="background: #80916D"></div>
+                                <div class="colorNameMobl moblRight" color-name="Camel" style="background: #C0A36C">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="De York" style="background: #FEB56D">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Yellow Green"
+                                    style="background: #026B6B"></div>
+                                <div class="colorNameMobl moblRight" color-name="Dolly" style="background: #81C080">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Stratos" style="background: #C1D97F">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Cardinal Pink"
+                                    style="background: #FFF282"></div>
+                                <div class="colorNameMobl moblRight" color-name="Shiraz" style="background: #03024C">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Torch Red" style="background: #81044B">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Congress Blue"
+                                    style="background: #C00248"></div>
+                                <div class="colorNameMobl moblRight" color-name="Rum" style="background: #FE0248"></div>
+                                <div class="colorNameMobl moblRight" color-name="Old Rose" style="background: #024986">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Geraldine" style="background: #816388">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Charm" style="background: #C37088">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Regen Gray"
+                                    style="background: #FF7F87"></div>
+                                <div class="colorNameMobl moblRight" color-name="Malta" style="background: #046DA5">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Wax Flower"
+                                    style="background: #8197A3"></div>
+                                <div class="colorNameMobl moblRight" color-name="Pacific Blue"
+                                    style="background: #C1ABA3"></div>
+                                <div class="colorNameMobl moblRight" color-name="Half Baked"
+                                    style="background: #FEBAA4"></div>
+                                <div class="colorNameMobl moblRight" color-name="Pixie Green"
+                                    style="background: #0494C0"></div>
+                                <div class="colorNameMobl moblRight" color-name="Lemon Chiffon"
+                                    style="background: #82C6BF"></div>
+                                <div class="colorNameMobl moblRight" color-name="Lucky Point"
+                                    style="background: #C1E0C0"></div>
+                                <div class="colorNameMobl moblRight" color-name="Cardinal Pink"
+                                    style="background: #FFF9CD"></div>
+                                <div class="colorNameMobl moblRight" color-name="Medium Red violet"
+                                    style="background: #1C1A73"></div>
+                                <div class="colorNameMobl moblRight" color-name="Rose" style="background: #820265">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Cobalt" style="background: #CC3A7F">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Deluge" style="background: #FE115F">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Viola" style="background: #034BB2">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Tickle me Pink"
+                                    style="background: #8066B2"></div>
+                                <div class="colorNameMobl moblRight" color-name="Science Blue"
+                                    style="background: #C374B3"></div>
+                                <div class="colorNameMobl moblRight" color-name="Chetwode Blue"
+                                    style="background: #FF82B2"></div>
+                                <div class="colorNameMobl moblRight" color-name="Logan" style="background: #0471D9">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Vista Blue"
+                                    style="background: #7C92D1"></div>
+                                <div class="colorNameMobl moblRight" color-name="Azure Radiance"
+                                    style="background: #B19FC8"></div>
+                                <div class="colorNameMobl moblRight" color-name="Cotton candy"
+                                    style="background: #FFBDD7"></div>
+                                <div class="colorNameMobl moblRight" color-name="Azure" style="background: #0297FE">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Fresh Air" style="background: #ADDDFD">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Water" style="background: #CBE9FD">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="White" style="background: #FFFFFF">
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-------------------------------------------------------right continue-->
+                        <div id="colorForRight">
+                            <span class="node"></span>
+                        </div>
+                    </div>
+                    <div class="border-text-mbl">Couleur de contour <span><img class="ms-2" src="/images/eyedropper.png"
+                                alt=""></span></div>
+
+                </div>
+
+                <div class="txt-png">
+                    <span>Téléchargez vos images</span><span class="png-jpg"> : (PNG , JPG)</span>
+
+                </div>
+                <div class="upload-to-cloud">
+                    <div class="upload-section">
+                        <span class="upl-icon"><img src="/images/upload-in-cloud.png" alt=""></span>
+                        <span class="upl-text">Charger une image</span>
+
+                    </div>
+                </div>
+                <div class="explorier-mbl">
+                    <div class="explorier-btn-mbl">
+                        <span><img class="mb-1 me-1" src="/images/search (1).png" alt=""></span>
+                        <span>Explorer</span>
+
+                    </div>
+                </div>
+                <div class="suivant-btns">
+                    <span class="Précédent">Précédent</span>
+                    <span class="Suivant">Suivant</span>
+
+                </div>
+
+            </section>
+
+
+
+            <section id="mylitre-plan-mbl">
+
+
+                <div class="color-portion">
+                    <div class="fond-box fond-box3 me-3" id="litreboxleft"></div>
+                    <!------------------------------------------------------left continue-->
+                    <div id="colorForMenuthree" class="mobl">
+
+                        <div class="uniqueone">
+                            <!-----colors for left started------>
+                            <div class="colorNameMobl moblLeft" color-name="Cod gray" style="background: #0A090A"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Maroon" style="background: #800000"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Guardsman Red" style="background: #C00203">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Crusoe" style="background: #FD1A19"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Cinnamon" style="background: #034502"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Indochine" style="background: #805C02">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Blaze orange" style="background: #BF6601">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Olive" style="background: #FF7202"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Buddha Gold" style="background: #036602">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Turbo" style="background: #828A03"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Venetian" style="background: #C39D0B"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Limeade" style="background: #FFE501"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Rio Grande" style="background: #038803">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Turbo" style="background: #81B603"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Stratos" style="background: #C2CE03"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Siren" style="background: #FFE501"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Monza" style="background: #000032"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Torch Red" style="background: #800033">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Teal Blue" style="background: #C00138">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Russett" style="background: #FE0532"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Contessa" style="background: #024958"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Bitter sweet" style="background: #816059">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Copper Red" style="background: #C06D5B">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Battleship Gray"
+                                style="background: #FF7859"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Twine" style="background: #026B6B"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Macaroni & cheese"
+                                style="background: #80916D"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Camel" style="background: #C0A36C"></div>
+                            <div class="colorNameMobl moblLeft" color-name="De York" style="background: #FEB56D"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Yellow Green" style="background: #026B6B">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Dolly" style="background: #81C080"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Stratos" style="background: #C1D97F"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Cardinal Pink" style="background: #FFF282">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Shiraz" style="background: #03024C"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Torch Red" style="background: #81044B">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Congress Blue" style="background: #C00248">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Rum" style="background: #FE0248"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Old Rose" style="background: #024986"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Geraldine" style="background: #816388">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Charm" style="background: #C37088"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Regen Gray" style="background: #FF7F87">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Malta" style="background: #046DA5"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Wax Flower" style="background: #8197A3">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Pacific Blue" style="background: #C1ABA3">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Half Baked" style="background: #FEBAA4">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Pixie Green" style="background: #0494C0">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Lemon Chiffon" style="background: #82C6BF">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Lucky Point" style="background: #C1E0C0">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Cardinal Pink" style="background: #FFF9CD">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Medium Red violet"
+                                style="background: #1C1A73"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Rose" style="background: #820265"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Cobalt" style="background: #CC3A7F"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Deluge" style="background: #FE115F"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Viola" style="background: #034BB2"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Tickle me Pink" style="background: #8066B2">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Science Blue" style="background: #C374B3">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Chetwode Blue" style="background: #FF82B2">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Logan" style="background: #0471D9"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Vista Blue" style="background: #7C92D1">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Azure Radiance" style="background: #B19FC8">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Cotton candy" style="background: #FFBDD7">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Azure" style="background: #0297FE"></div>
+                            <div class="colorNameMobl moblLeft" color-name="Fresh Air" style="background: #ADDDFD">
+                            </div>
+                            <div class="colorNameMobl moblLeft" color-name="Water" style="background: #CBE9FD"></div>
+                            <div class="colorNameMobl moblLeft" color-name="White" style="background: #FFFFFF"></div>
+                            <!-------colors for left ended------>
+
+                        </div>
+                        <!-------colors for left ended------>
+                    </div>
+                    <div class="color-text-mbl">Couleur de fond <span><img class="ms-2" src="/images/eyedropper.png"
+                                alt=""></span></div>
+
+                </div>
+                <div class="border-portion">
+                    <label class="containers">
+                        <input type="checkbox" id="mblarialcheck3">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div class="border-twice-box">
+                        <div class="border-box border-box3  me-3" id="litreboxright"></div>
+                        <!------paste from here for left side color of mobile---->
+                        <div id="colorForRightthree" class="mobl">
+                            <div class="uniqueone">
+                                <!-----colors for right started------>
+                                <div class="colorNameMobl moblRight" color-name="Cod gray" style="background: #0A090A">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Maroon" style="background: #800000">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Guardsman Red"
+                                    style="background: #C00203"></div>
+                                <div class="colorNameMobl moblRight" color-name="Crusoe" style="background: #FD1A19">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Cinnamon" style="background: #034502">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Indochine" style="background: #805C02">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Blaze orange"
+                                    style="background: #BF6601"></div>
+                                <div class="colorNameMobl moblRight" color-name="Olive" style="background: #FF7202">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Buddha Gold"
+                                    style="background: #036602"></div>
+                                <div class="colorNameMobl moblRight" color-name="Turbo" style="background: #828A03">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Venetian" style="background: #C39D0B">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Limeade" style="background: #FFE501">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Rio Grande"
+                                    style="background: #038803"></div>
+                                <div class="colorNameMobl moblRight" color-name="Turbo" style="background: #81B603">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Stratos" style="background: #C2CE03">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Siren" style="background: #FFE501">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Monza" style="background: #000032">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Torch Red" style="background: #800033">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Teal Blue" style="background: #C00138">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Russett" style="background: #FE0532">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Contessa" style="background: #024958">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Bitter sweet"
+                                    style="background: #816059"></div>
+                                <div class="colorNameMobl moblRight" color-name="Copper Red"
+                                    style="background: #C06D5B"></div>
+                                <div class="colorNameMobl moblRight" color-name="Battleship Gray"
+                                    style="background: #FF7859"></div>
+                                <div class="colorNameMobl moblRight" color-name="Twine" style="background: #026B6B">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Macaroni & cheese"
+                                    style="background: #80916D"></div>
+                                <div class="colorNameMobl moblRight" color-name="Camel" style="background: #C0A36C">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="De York" style="background: #FEB56D">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Yellow Green"
+                                    style="background: #026B6B"></div>
+                                <div class="colorNameMobl moblRight" color-name="Dolly" style="background: #81C080">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Stratos" style="background: #C1D97F">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Cardinal Pink"
+                                    style="background: #FFF282"></div>
+                                <div class="colorNameMobl moblRight" color-name="Shiraz" style="background: #03024C">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Torch Red" style="background: #81044B">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Congress Blue"
+                                    style="background: #C00248"></div>
+                                <div class="colorNameMobl moblRight" color-name="Rum" style="background: #FE0248"></div>
+                                <div class="colorNameMobl moblRight" color-name="Old Rose" style="background: #024986">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Geraldine" style="background: #816388">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Charm" style="background: #C37088">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Regen Gray"
+                                    style="background: #FF7F87"></div>
+                                <div class="colorNameMobl moblRight" color-name="Malta" style="background: #046DA5">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Wax Flower"
+                                    style="background: #8197A3"></div>
+                                <div class="colorNameMobl moblRight" color-name="Pacific Blue"
+                                    style="background: #C1ABA3"></div>
+                                <div class="colorNameMobl moblRight" color-name="Half Baked"
+                                    style="background: #FEBAA4"></div>
+                                <div class="colorNameMobl moblRight" color-name="Pixie Green"
+                                    style="background: #0494C0"></div>
+                                <div class="colorNameMobl moblRight" color-name="Lemon Chiffon"
+                                    style="background: #82C6BF"></div>
+                                <div class="colorNameMobl moblRight" color-name="Lucky Point"
+                                    style="background: #C1E0C0"></div>
+                                <div class="colorNameMobl moblRight" color-name="Cardinal Pink"
+                                    style="background: #FFF9CD"></div>
+                                <div class="colorNameMobl moblRight" color-name="Medium Red violet"
+                                    style="background: #1C1A73"></div>
+                                <div class="colorNameMobl moblRight" color-name="Rose" style="background: #820265">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Cobalt" style="background: #CC3A7F">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Deluge" style="background: #FE115F">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Viola" style="background: #034BB2">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Tickle me Pink"
+                                    style="background: #8066B2"></div>
+                                <div class="colorNameMobl moblRight" color-name="Science Blue"
+                                    style="background: #C374B3"></div>
+                                <div class="colorNameMobl moblRight" color-name="Chetwode Blue"
+                                    style="background: #FF82B2"></div>
+                                <div class="colorNameMobl moblRight" color-name="Logan" style="background: #0471D9">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Vista Blue"
+                                    style="background: #7C92D1"></div>
+                                <div class="colorNameMobl moblRight" color-name="Azure Radiance"
+                                    style="background: #B19FC8"></div>
+                                <div class="colorNameMobl moblRight" color-name="Cotton candy"
+                                    style="background: #FFBDD7"></div>
+                                <div class="colorNameMobl moblRight" color-name="Azure" style="background: #0297FE">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Fresh Air" style="background: #ADDDFD">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="Water" style="background: #CBE9FD">
+                                </div>
+                                <div class="colorNameMobl moblRight" color-name="White" style="background: #FFFFFF">
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-------------------------------------------------------right continue-->
+                        <div id="colorForRight"></div>
+                    </div>
+                    <div class="border-text-mbl">Couleur de contour <span><img class="ms-2" src="/images/eyedropper.png"
+                                alt=""></span></div>
+
+                </div>
+
+                <div class="txt-png">
+                    <span>Téléchargez vos images</span><span class="png-jpg"> : (PNG , JPG)</span>
+
+                </div>
+                <div class="upload-to-cloud">
+                    <div class="upload-section">
+                        <span class="upl-icon"><img src="/images/upload-in-cloud.png" alt=""></span>
+                        <span class="upl-text">Charger une image</span>
+
+                    </div>
+                </div>
+                <div class="explorier-mbl">
+                    <div class="explorier-btn-mbl">
+                        <span><img class="mb-1 me-1" src="/images/search (1).png" alt=""></span>
+                        <span>Explorer</span>
+
+                    </div>
+                </div>
+                <div class="suivant-btns">
+                    <span class="Précédent">Précédent</span>
+                    <span class="Suivant">Suivant</span>
+
+                </div>
+
+            </section>
+
+
+
+
+
+
+        </div>
+
+
+        <div class="mbl-bill">
+            <div class="bill-content">
+
+                <div class="bill-header">
+                    <span class="bill-icon ms-1 me-3"><img src="/images/bill-icon.png" alt=""></span>
+                    <span class="bill-heading mt-2">Bilan commande </span>
+
+                </div>
+                <div class="bill-inner">
+                    <div class="bill-text">
+                        <div class="bill-img">
+
+                            <img class="ms-1 me-1" src="images/Groupe de masqu (1).png" alt="" width="55px">
+
+
+
+                        </div>
+                        <div class="bill-data ms-3">
+                            <div class="data1">Base plexi glace immatriculation </div>
+                            <div class="data2">52 x 11 cm</div>
+                            <div class="data3">20,00 €</div>
+
+
+                        </div>
+                        <div class="delete-icon">
+                            <img class="mb-3" src="/images/trash.png" alt="" width="9px">
+
+                        </div>
+
+                    </div>
+                    <div class="bill-text">
+                        <div class="bill-img">
+
+                            <img class="ms-1 me-1" src="images/Groupe de masqu (1).png" alt="" width="55px">
+
+
+
+                        </div>
+                        <div class="bill-data ms-3">
+                            <div class="data1">Base plexi glace immatriculation </div>
+                            <div class="data2">52 x 11 cm</div>
+                            <div class="data3">20,00 €</div>
+
+
+                        </div>
+                        <div class="delete-icon">
+                            <img class="mb-3" src="/images/trash.png" alt="" width="9px">
+
+                        </div>
+
+                    </div>
+                    <div class="bill-quantity">
+
+                        <div class="qty-text">
+                            Quantité
+
+                        </div>
+                        <div class="qty-btn">
+                            <span><img class="me-1" src="/images/minus.png" alt="" width="14px"></span>
+                            <span class="">1</span>
+                            <span><img class="ms-1" src="/images/plus.png" alt="" width="14px"></span>
+                        </div>
+
+                    </div>
+                    <div class="bill-total">
+                        <span>Total</span>
+                        <span>20,00 €</span>
+
+                    </div>
+
+                    <div class="below-btns-desktop">
+                        
+                   <span><button class="panier-btn">Ajouter au panier</button></span> 
+                   <span> <button class="register-btn">Enregistrer pour plus tard</button> </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+
+        const navTogger = document.querySelector(".nav-toggle");
+        navTogger.addEventListener("click", navToggo);
+
+        function navToggo() {
+            //  navTogger.classList.toggle("active");
+            const nav = document.querySelector("nav");
+            nav.classList.toggle("open");
+            if (nav.classList.contains("open")) {
+                nav.style.maxHeight = nav.scrollHeight + "px";
+            } else {
+                nav.removeAttribute("style")
+            }
+            ;
+        }
+        //menu down
+        let euroBande = document.querySelector("#prob");
+        let menuForEuro = document.querySelector("#checking");
+        euroBande.onclick = function () {
+            menuForEuro.classList.toggle('showmebox');
+            menuForEuro.style.transition = "all 7s";
+
+        }
+
+        //right mobile color menu
+        let borderBox = document.querySelector(".border-box");
+        let colorForRight = document.querySelector("#colorForRight");
+        borderBox.onclick = function () {
+            colorForRight.classList.toggle('showmebox');
+            colorForRight.style.visibility = "visible";
+            document.querySelector('#mblarialcheck').checked = true;
+
+        }
+        //left mobile color menu
+        let mblLeftColor = document.querySelector(".fond-box");
+        let colorMenuShow = document.querySelector("#colorForMenu");
+        mblLeftColor.onclick = function () {
+            colorMenuShow.classList.toggle('showmebox');
+            colorForRight.style.visibility = "hidden";
+            document.querySelector('#mblarialcheck').checked = false;
+        }
+
+        // Logo
+
+
+
+
+        let borderBox2 = document.querySelector(".border-box2");
+        let colorForRight2 = document.querySelector("#colorForRighttwo");
+        borderBox2.onclick = function () {
+            colorForRight2.classList.toggle('showmebox');
+            colorForRight2.style.visibility = "visible";
+            document.querySelector('#mblarialcheck2').checked = true;
+
+        }
+        //left mobile color menu
+        let mblLeftColor2 = document.querySelector(".fond-box2");
+        let colorMenuShow2 = document.querySelector("#colorForMenutwo");
+        mblLeftColor2.onclick = function () {
+            colorMenuShow2.classList.toggle('showmebox');
+            colorForRight2.style.visibility = "hidden";
+            document.querySelector('#mblarialcheck2').checked = false;
+        }
+
+        // Litre
+
+
+        let borderBox3 = document.querySelector(".border-box3");
+        let colorForRight3 = document.querySelector("#colorForRightthree");
+        borderBox3.onclick = function () {
+            colorForRight3.classList.toggle('showmebox');
+            colorForRight3.style.visibility = "visible";
+            document.querySelector('#mblarialcheck3').checked = true;
+
+        }
+        //left mobile color menu
+        let mblLeftColor3 = document.querySelector(".fond-box3");
+        let colorMenuShow3 = document.querySelector("#colorForMenuthree");
+        mblLeftColor3.onclick = function () {
+            colorMenuShow3.classList.toggle('showmebox');
+            colorForRight3.style.visibility = "hidden";
+            document.querySelector('#mblarialcheck3').checked = false;
+        }
+
+
+    </script>
+    <script src="js/mbl.js"></script>
+</body>
+
+</html>
